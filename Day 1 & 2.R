@@ -88,3 +88,50 @@ b = factor(a, levels = c("small", "medium", "large", "xlarge"), ordered = TRUE)
 c = factor(a, ordered = TRUE)
 b
 c
+
+#Data Structures 
+#they are 4 major data structures in R. 
+#1. Vectors, 2. Matrices, 3. Dataframes and 4. Lists
+
+#VECTORS: They are basic data structure in r, they are one dimensional structure.They are created 
+#using the c() function, where "c" stands for combine or concatenate. We use length() to check length of vector
+#class() for class of vector and typeof() to check the data type. 
+
+#Examples
+# This is a vector of length 1
+27
+length(27)
+class(27)
+
+#to create a vector with many numbers 
+num_vec <- c(1,2,3,4)
+num_vec
+length(num_vec)
+
+#Example 2: creating of a vector with numeric and characters 
+b <- c(1,2,"How", "many", "are", "there?")
+b
+length(b)
+class(b)
+
+#Example 3: To collect ages of students:
+#We use "L" to signify non leading and decimal component. R takes them as integer 
+student_ages <- c(22L, 26L, 30L, 27L, 28L)
+length(student_ages)
+class(student_ages)
+
+#When the "L is omitted the class of the numbers turns to default numeric instead of integer. 
+stu_age <- c(22, 26, 30, 27, 28)
+class(stu_age)
+
+#Maths calculation is also possible with vectors
+num_vec <- c(1,2,3,4)
+num_vec
+# element-wise addition. It adds 2 to each of the numbers in the object
+num_vec + 2
+
+# element-wise power
+num_vec ^ 2
+
+# Sum of vector elements
+sum(num_vec)
