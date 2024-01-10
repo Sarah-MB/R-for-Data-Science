@@ -135,3 +135,26 @@ num_vec ^ 2
 
 # Sum of vector elements
 sum(num_vec)
+
+#mean of vector
+sum(num_vec)/  length(num_vec)
+
+#OE
+mean(num_vec)
+
+
+#The sequence = seq() and replicate = rep() functions
+# Let's create a sequence from 1 to 10.
+one_to_ten <- seq(1:10) 
+one_to_ten
+
+#OR
+1:10
+
+# A sequence with a starting and ending value, and the amount by which to increment each step in the sequence
+sequence_by_2 <- seq(from = 0L, to = 100L, by = 2L)
+sequence_by_2
+
+# To repeat one_to_ten sequence 3 times
+rep(one_to_ten, times = 3)
+
